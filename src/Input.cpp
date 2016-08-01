@@ -26,40 +26,40 @@ void Input::pollForInput()
                 case SDLK_3:
                     m_keys[2] = 1;
                     break;
-                case SDLK_q:
+                case SDLK_4:
                     m_keys[3] = 1;
                     break;
-                case SDLK_w:
+                case SDLK_q:
                     m_keys[4] = 1;
                     break;
-                case SDLK_e:
+                case SDLK_w:
                     m_keys[5] = 1;
                     break;
-                case SDLK_a:
+                case SDLK_e:
                     m_keys[6] = 1;
                     break;
-                case SDLK_s:
+                case SDLK_r:
                     m_keys[7] = 1;
                     break;
-                case SDLK_d:
+                case SDLK_a:
                     m_keys[8] = 1;
                     break;
-                case SDLK_x:
+                case SDLK_s:
                     m_keys[9] = 1;
                     break;
-                case SDLK_z:
+                case SDLK_d:
                     m_keys[10] = 1;
                     break;
-                case SDLK_c:
+                case SDLK_f:
                     m_keys[11] = 1;
                     break;
-                case SDLK_4:
+                case SDLK_z:
                     m_keys[12] = 1;
                     break;
-                case SDLK_r:
+                case SDLK_x:
                     m_keys[13] = 1;
                     break;
-                case SDLK_f:
+                case SDLK_c:
                     m_keys[14] = 1;
                     break;
                 case SDLK_v:
@@ -85,40 +85,40 @@ void Input::pollForInput()
                 case SDLK_3:
                     m_keys[2] = 0;
                     break;
-                case SDLK_q:
+                case SDLK_4:
                     m_keys[3] = 0;
                     break;
-                case SDLK_w:
+                case SDLK_q:
                     m_keys[4] = 0;
                     break;
-                case SDLK_e:
+                case SDLK_w:
                     m_keys[5] = 0;
                     break;
-                case SDLK_a:
+                case SDLK_e:
                     m_keys[6] = 0;
                     break;
-                case SDLK_s:
+                case SDLK_r:
                     m_keys[7] = 0;
                     break;
-                case SDLK_d:
+                case SDLK_a:
                     m_keys[8] = 0;
                     break;
-                case SDLK_x:
+                case SDLK_s:
                     m_keys[9] = 0;
                     break;
-                case SDLK_z:
+                case SDLK_d:
                     m_keys[10] = 0;
                     break;
-                case SDLK_c:
+                case SDLK_f:
                     m_keys[11] = 0;
                     break;
-                case SDLK_4:
+                case SDLK_z:
                     m_keys[12] = 0;
                     break;
-                case SDLK_r:
+                case SDLK_x:
                     m_keys[13] = 0;
                     break;
-                case SDLK_f:
+                case SDLK_c:
                     m_keys[14] = 0;
                     break;
                 case SDLK_v:
@@ -156,32 +156,34 @@ uint8_t Input::waitForKeyPress()
                         return 1;
                     case SDLK_3:
                         return 2;
-                    case SDLK_q:
-                        return 3;
-                    case SDLK_w:
-                        return 4;
-                    case SDLK_e:
-                        return 5;
-                    case SDLK_a:
-                        return 6;
-                    case SDLK_s:
-                        return 7;
-                    case SDLK_d:
-                        return 8;
-                    case SDLK_x:
-                        return 9;
-                    case SDLK_z:
-                        return 10;
-                    case SDLK_c:
-                        return 11;
                     case SDLK_4:
-                        return 12;
+                        return 3;
+                    case SDLK_q:
+                        return 4;
+                    case SDLK_w:
+                        return 5;
+                    case SDLK_e:
+                        return 6;
                     case SDLK_r:
-                        return 13;
+                        return 7;
+                    case SDLK_a:
+                        return 8;
+                    case SDLK_s:
+                        return 9;
+                    case SDLK_d:
+                        return 10;
                     case SDLK_f:
+                        return 11;
+                    case SDLK_z:
+                        return 12;
+                    case SDLK_x:
+                        return 13;
+                    case SDLK_c:
                         return 14;
                     case SDLK_v:
                         return 15;
+                    case SDLK_ESCAPE:
+                        std::exit(0);
                 }
             }
         }
