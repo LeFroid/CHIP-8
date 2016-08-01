@@ -2,6 +2,7 @@
 
 #include "Graphics.h"
 #include "Input.h"
+#include "Sound.h"
 
 #include <cstdint>
 #include <string>
@@ -55,4 +56,7 @@ private:
 
     /// Graphics system
     Graphics m_graphics;
+
+    /// Sound system
+    Sound m_sound;
 };

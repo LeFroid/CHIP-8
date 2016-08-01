@@ -33,7 +33,8 @@ Chip::Chip() :
     m_DT(0),
     m_ST(0),
     m_input(),
-    m_graphics()
+    m_graphics(),
+    m_sound()
 {
     srand(time(NULL));
 }
@@ -319,7 +320,7 @@ void Chip::processTimers()
         if (m_ST == 1)
         {
             // Make a beep / noise
-            std::cout << '\a';
+            m_sound.play();
         }
         --m_ST;
     }
