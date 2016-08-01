@@ -161,7 +161,7 @@ uint8_t Input::waitForKeyPress()
     for (int i = 0; i < 16; ++i)
     {
         if (m_keys[i] == 1)
-            return 1;
+            return i;
     }
 
     SDL_Event event;
